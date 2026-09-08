@@ -23,7 +23,8 @@ export function ThemeToggle() {
         applyTheme(dark ? "light" : "dark");
       }}
       className={cn(
-        "relative grid size-11 place-items-center rounded-full text-fg",
+        "relative z-10 grid size-11 place-items-center rounded-full text-fg",
+        "pointer-events-auto cursor-pointer",
         "transition-[background-color,transform] duration-quick ease-out-smooth",
         "hover:bg-surface active:scale-[0.96]",
       )}

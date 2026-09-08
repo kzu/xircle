@@ -8,13 +8,10 @@ import { cn } from "@/lib/utils";
 const subscribeToNothing = () => () => {};
 const noGateSessionOnServer = () => false;
 
-const iconSlot = cn(
-  "relative grid size-11 shrink-0 place-items-center rounded-full text-fg",
-  "transition-[background-color,transform,opacity] duration-quick ease-out-smooth",
-);
-
 const iconBtn = cn(
-  iconSlot,
+  "relative z-10 grid size-11 shrink-0 place-items-center rounded-full text-fg",
+  "pointer-events-auto cursor-pointer",
+  "transition-[background-color,transform,opacity] duration-quick ease-out-smooth",
   "hover:bg-surface active:scale-[0.96] disabled:cursor-wait disabled:opacity-60",
 );
 
@@ -27,55 +24,32 @@ export function AuthSlot() {
     noGateSessionOnServer,
   );
 
-  if (isPending) {
-    return (
-      <div className={cn(iconSlot, "opacity-40")} aria-hidden="true">
-        <LogIn className="size-5" strokeWidth={1.6} />
-      </div>
-    );
-  }
-
-  if (!user) {
-    return (
-      <button
-        type="button"
-        aria-label="Sign in with X"
-        title="Sign in with X"
-        disabled={busy}
-        onClick={() => {
-          setBusy(true);
-          void signIn("grok-x", { callbackURL: "/" }).catch(() => setBusy(false));
-        }}
-        className={iconBtn}
-      >
-        <LogIn className="size-5" strokeWidth={1.6} />
-      </button>
-    );
-  }
-
-  const canSignOut = authEnabled && !gateSession;
-
-  if (!canSignOut) {
-    return (
-      <span className={iconSlot} aria-label="Signed in" title="Signed in">
-        <LogOut className="size-5" strokeWidth={1.6} />
-      </span>
-    );
-  }
+  // Direct (X) sessions can sign out. Gate-materialized sessions cannot —
+  // the next request signs the viewer back in — so offer Sign in with X
+  // instead of a dead door.
+  const canSignOut = Boolean(user) && authEnabled && !gateSession && !isPending;
 
   return (
     <button
       type="button"
-      aria-label="Sign out"
-      title="Sign out"
+      aria-label={canSignOut ? "Sign out" : "Sign in with X"}
+      title={canSignOut ? "Sign out" : "Sign in with X"}
       disabled={busy}
       onClick={() => {
+        if (busy) return;
         setBusy(true);
-        void signOut().catch(() => setBusy(false));
+        const action = canSignOut
+          ? signOut()
+          : signIn("grok-x", { callbackURL: "/" });
+        void action.catch(() => setBusy(false));
       }}
       className={iconBtn}
     >
-      <LogOut className="size-5" strokeWidth={1.6} />
+      {canSignOut ? (
+        <LogOut className="size-5" strokeWidth={1.6} />
+      ) : (
+        <LogIn className="size-5" strokeWidth={1.6} />
+      )}
     </button>
   );
 }
