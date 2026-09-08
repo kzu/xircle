@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figure AI — Tesis de inversión</title>
+  <meta name="description" content="Tesis de inversión en Figure AI: valoración de $39B, FODA, inversores, competencia y el caso alcista/bajista del humanoid más capitalizado del mundo.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="../">
+        <span class="brand-mark">g</span>
+        grok <small>/ figure</small>
+      </a>
+      <div class="top-actions">
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">
+          <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v2M12 19v2M5 12H3M21 12h-2M6.3 6.3 4.9 4.9M19.1 19.1l-1.4-1.4M17.7 6.3l1.4-1.4M4.9 19.1l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Tesis de inversión · 29 agosto 2026</div>
+      <h1>Figure AI</h1>
+      <p class="lede">El humanoid más caro del mundo no es una tesis de revenue. Es una tesis de plataforma: hardware que ya se fabrica a ritmo de fábrica, un modelo de acción propio, y una apuesta a que el trabajo físico se vuelve software.</p>
+      <div class="verdict-pill"><i></i> Convencimiento alto · Precio exigente · Posición: selectiva / no chase</div>
+      <div class="stats">
+        <div class="stat"><b>$39B</b><span>Post-money Series C · sep 2025</span></div>
+        <div class="stat"><b>~$1.9B</b><span>Capital levantado (seed → C)</span></div>
+        <div class="stat"><b>1.000+</b><span>Robots producidos a jul 2026</span></div>
+        <div class="stat"><b>15×</b><span>Markup vs. Series B ($2.6B)</span></div>
+      </div>
+      <nav class="toc">
+        <a href="#tesis">Tesis</a>
+        <a href="#compania">Compañía</a>
+        <a href="#producto">Producto</a>
+        <a href="#numeros">Números</a>
+        <a href="#inversores">Inversores</a>
+        <a href="#foda">FODA</a>
+        <a href="#proscons">Pros / cons</a>
+        <a href="#competencia">Competencia</a>
+        <a href="#veredicto">Veredicto</a>
+      </nav>
+    </header>
+
+    <section id="tesis">
+      <h2>La tesis en un párrafo</h2>
+      <p class="sec-lead">Figure no se compra como un OEM de robots. Se compra como el intento más capitalizado de Occidente de convertir un humanoid de propósito general en un producto manufacturable, con un stack de IA propio (Helix) y un flywheel de datos (Index + flota desplegada).</p>
+      <div class="grid-3">
+        <article class="card">
+          <div class="kicker">01 · Hardware</div>
+          <h3>Ya no es un demo</h3>
+          <p class="muted">Tres generaciones en ~30 meses. BotQ pasó de 1 robot/día a 1/hora. Capacidad inicial 12.000/año, con roadmap a 100.000. En junio 2026 la flota superó al headcount humano.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">02 · Software</div>
+          <h3>Helix in-house</h3>
+          <p class="muted">Rompieron con OpenAI en feb 2025. Helix es un VLA propio: percepción → lenguaje → acción, on-device. Index (ago 2026) es el intento de resolver el data bottleneck con humanos reales, no vendors.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">03 · Distribución</div>
+          <h3>Fábrica, logístico, casa</h3>
+          <p class="muted">BMW Spartanburg validó ciclo industrial. Catalyst Brands abre warehousing. Brookfield abre real estate residencial/logístico como terreno de pretraining. El TAM declarado es el salario humano.</p>
+        </article>
+      </div>
+      <div class="callout">
+        <strong>Cómo leer el precio.</strong> $39B post-money es ~el TAM 2035 de humanoids según Goldman Sachs. El mercado secundario (Forge, 29 ago 2026) marca ~$174/acción, ~$34.8B implícitos: un descuento de ~11% vs. la ronda. No es barato. El único camino que justifica el número es ejecución de flota + data moat + costo unitario bajando en curva de aprendizaje.
+      </div>
+    </section>
+
+    <section id="compania">
+      <h2>Qué es Figure</h2>
+      <p class="sec-lead">Fundada en 2022 por Brett Adcock (cofundador de Archer Aviation y Vettery) en San Jose. Objetivo declarado: un robot humanoid de propósito general que trabaje en el mundo diseñado para humanos — fábricas, depósitos, y eventualmente casas.</p>
+      <div class="grid-2">
+        <article class="card">
+          <div class="kicker">Línea de tiempo</div>
+          <div class="timeline">
+            <div class="tl"><time>2022</time><strong>Fundación + seed de $100M</strong><span>Adcock autofinancia. Burn a $1M/mes en cuatro meses.</span></div>
+            <div class="tl"><time>May 2023</time><strong>Series A · $70M</strong><span>Lead Parkway Venture Capital. Prototype Figure 01.</span></div>
+            <div class="tl"><time>Ene 2024</time><strong>Acuerdo con BMW</strong><span>Primer ancla industrial. Spartanburg, South Carolina.</span></div>
+            <div class="tl"><time>Feb 2024</time><strong>Series B · $675M @ $2.6B</strong><span>Microsoft, OpenAI Startup Fund, NVIDIA, Bezos, Amazon IIF, Intel.</span></div>
+            <div class="tl"><time>Ago 2024</time><strong>Figure 02</strong><span>Rediseño industrial. Manos 16 DoF, 20 kg de payload.</span></div>
+            <div class="tl"><time>Feb 2025</time><strong>Corta con OpenAI · lanza Helix</strong><span>El software pasa a ser el moat, no el partner.</span></div>
+            <div class="tl"><time>Mar 2025</time><strong>BotQ</strong><span>Fábrica propia. Vertical integration de actuadores, batería, electronics.</span></div>
+            <div class="tl"><time>Sep 2025</time><strong>Series C · &gt;$1B @ $39B</strong><span>Parkway lead. Entran Brookfield, NVIDIA, Macquarie, LG, Salesforce, T-Mobile, Qualcomm.</span></div>
+            <div class="tl"><time>Oct 2025</time><strong>Figure 03</strong><span>Rediseño para casa + volumen. TIME Best Inventions 2025.</span></div>
+            <div class="tl"><time>2026</time><strong>Ramp + Index</strong><span>1.000+ unidades, BMW 03, Catalyst Brands, dataset propio de $1B de spend planeado.</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="kicker">El fundador</div>
+          <h3>Brett Adcock</h3>
+          <p>Serial operator de alta intensidad. Vendió Vettery a Adecco (~$110M, 2018), sacó Archer Aviation a bolsa vía SPAC, y arrancó Figure con capital propio. Estilo: semanas de 100 horas, integración vertical extrema, narrativa de “el trabajo humano es el TAM”.</p>
+          <p class="muted">Atención dividida, y no es menor: en paralelo corre Hark Labs (lab de AI, Series A $700M @ $6B en may 2026) y Cover (seguridad escolar con imaging terahertz). Archer sigue existiendo. El upside de Figure está atado a que el CEO no diluya foco en el momento en que la compañía pasa de lab a manufacturer.</p>
+          <p class="muted">Cultura pública: agresiva con brokers del secundario (C&amp;D), celosa del cap table, y muy buena generando demo-videos que marcan agenda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="producto">
+      <h2>Producto y stack</h2>
+      <p class="sec-lead">Tres generaciones de hardware y dos de modelo. El salto que importa no es cosmético: es de prototipo CNC a pieza pensada para die-cast, injection molding y línea.</p>
+      <div class="grid-3">
+        <article class="card">
+          <div class="kicker">2023–24</div>
+          <h3>Figure 01</h3>
+          <p class="muted">Proof of concept. Cables externos, batería mochila. Sirvió para caminar, levantar capital y firmar BMW. Ya no es el producto.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">2024–25</div>
+          <h3>Figure 02</h3>
+          <p class="muted">~170 cm, 70 kg, 20 kg payload, 6 cámaras RGB, manos 16 DoF. 11 meses en el body shop de BMW Spartanburg: +30.000 X3, +90.000 piezas, +1.250 horas, &gt;99% accuracy de placement. Flota retirada nov 2025.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Oct 2025 →</div>
+          <h3>Figure 03</h3>
+          <p class="muted">5′8″ / ~173 cm, 61 kg (−9%), 20 kg payload, 5 h / 2.3 kWh, carga inductiva 2 kW por los pies, textiles blandos, cámaras en palma, audio 4×. Diseñado para Helix, casa y volumen.</p>
+        </article>
+      </div>
+      <div class="grid-2" style="margin-top:1rem">
+        <article class="card">
+          <div class="kicker">Helix 01 → 02</div>
+          <h3>El cerebro ya no se alquila</h3>
+          <p>Helix es un vision-language-action model entrenado in-house. Controla percepción, razonamiento y motor commands. Helix 02 unifica locomoción y manipulación en una red. Inferencia on-device (dual GPU embebida): no depende de la nube para trabajar en planta.</p>
+          <p class="muted">La justificación del corte con OpenAI, en boca de Adcock: el equipo interno “les daba vueltas” en control de alta frecuencia, y OpenAI se estaba metiendo en robotics. Un año de partnership. Después, competidores.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Index · 25 ago 2026</div>
+          <h3>El dataset que no existe en internet</h3>
+          <p>App de captura de video físico humano. En stealth: 264 mil descargas en 108 países, 44 mil WAU, 16 millones de videos, 30 minutos de upload por segundo, $15M pagados a creators. Compromiso: &gt;$1B en data + compute en 12 meses.</p>
+          <p class="muted">Por cada 1.000 horas: 373 tareas, 1.146 objetos, 116 entornos. Es la pieza que intenta convertir a Figure en una compañía de datos, no solo de brazos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="numeros">
+      <h2>Números que importan</h2>
+      <p class="sec-lead">La compañía no publica revenue. Todo lo que sigue es capital, cadencia de fábrica y evidencia de campo — no P&amp;L.</p>
+      <div class="grid-2">
+        <article class="card chart-card">
+          <div class="kicker">Valoración</div>
+          <h3>De $0.5B a $39B en 28 meses</h3>
+          <div class="chart-wrap"><canvas id="valChart"></canvas></div>
+          <p class="note">Post-money declarado. Seed de Adcock no tenía mark público. Forge (~$34.8B, 29 ago 2026) no aparece en la curva oficial.</p>
+        </article>
+        <article class="card chart-card">
+          <div class="kicker">Fábrica · BotQ</div>
+          <h3>Ramp 2026, de a puñados a uno por hora</h3>
+          <div class="chart-wrap"><canvas id="prodChart"></canvas></div>
+          <p class="note">2025 entero ≈ 150 unidades. Feb–abr 2026: ~60 → ~120 → ~240/mes. Abr: 350+ acumuladas. Jul: 1.000+. Capacidad nominal 12.000/año.</p>
+        </article>
+      </div>
+      <div class="card" style="margin-top:1rem; overflow-x:auto">
+        <div class="kicker">Rondas</div>
+        <table>
+          <thead>
+            <tr><th>Fecha</th><th>Ronda</th><th>Monto</th><th>Post-money</th><th>Lead / nombres</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>May 2022</td><td>Seed</td><td class="num">$100M</td><td class="num">n/d</td><td>Brett Adcock</td></tr>
+            <tr><td>24 may 2023</td><td>Series A</td><td class="num">$70M</td><td class="num">~$500M</td><td>Parkway VC · Tamarack, Aliya, Bold, FJ Labs</td></tr>
+            <tr><td>17 jul 2023</td><td>A extension</td><td class="num">$9M</td><td class="num">n/d</td><td>Intel Capital</td></tr>
+            <tr><td>Feb 2024</td><td>Series B</td><td class="num">$675M</td><td class="num">$2.6B</td><td>Microsoft, OpenAI Fund, NVIDIA, Bezos, Amazon IIF, Intel, Parkway, Align, ARK</td></tr>
+            <tr><td>16 sep 2025</td><td>Series C</td><td class="num">&gt;$1B</td><td class="num">$39B</td><td>Parkway · Brookfield, NVIDIA, Macquarie, Intel, LG, Salesforce, T-Mobile, Qualcomm, Align, Tamarack</td></tr>
+            <tr><td>13 ago 2026</td><td>Corp. minority</td><td class="num">$1M</td><td class="num">n/d</td><td>Asteria (Japón)</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Total divulgado ≈ $1.75–1.9B. PitchBook pone más si se cuentan secundarios. Sacra: $1.75B. CB Insights: $1.855B.</p>
+      </div>
+    </section>
+
+    <section id="inversores">
+      <h2>Quién está sentado en la mesa</h2>
+      <p class="sec-lead">El cap table parece un directorio de infraestructura del siglo XXI: cloud, silicio, telecom, real estate y un VC que lideró A y C.</p>
+      <div class="card">
+        <div class="kicker">Nombres conocidos</div>
+        <div class="investors" style="margin-top:.8rem">
+          <span class="chip">Parkway Venture Capital <em>lead A y C</em></span>
+          <span class="chip">Brett Adcock <em>founder / seed</em></span>
+          <span class="chip">NVIDIA</span>
+          <span class="chip">Intel Capital</span>
+          <span class="chip">Microsoft <em>B</em></span>
+          <span class="chip">Jeff Bezos / Expeditions <em>B</em></span>
+          <span class="chip">OpenAI Startup Fund <em>B · luego exit</em></span>
+          <span class="chip">Amazon IIF <em>B</em></span>
+          <span class="chip">Brookfield <em>C + real estate</em></span>
+          <span class="chip">Macquarie Capital</span>
+          <span class="chip">Salesforce</span>
+          <span class="chip">Qualcomm Ventures</span>
+          <span class="chip">T-Mobile Ventures</span>
+          <span class="chip">LG Technology Ventures</span>
+          <span class="chip">Align Ventures</span>
+          <span class="chip">Tamarack Global</span>
+          <span class="chip">ARK</span>
+          <span class="chip">Asteria <em>JP · 2026</em></span>
+        </div>
+        <p class="note">Hay decenas más en el C (Coatue aparece en listados de Forge; Parkway es el ancla institucional más antiguo). OpenAI sigue en el cap table de la B aunque la partnership operativa terminó.</p>
+      </div>
+      <div class="grid-3" style="margin-top:1rem">
+        <article class="card">
+          <h3>Por qué Brookfield importa</h3>
+          <p class="muted">No es solo cheque. Project Go-Big abre 100.000 unidades residenciales, 500M sq ft comerciales y 160M logísticos como entornos de pretraining. Data + canal de deployment en el mismo LP.</p>
+        </article>
+        <article class="card">
+          <h3>Por qué NVIDIA importa</h3>
+          <p class="muted">Repitió en B y C. Compute de entrenamiento, GPUs onboard, y alineación con el trade de “physical AI”. Si Helix escala, NVIDIA vende el pico y el edge.</p>
+        </article>
+        <article class="card">
+          <h3>Por qué Parkway importa</h3>
+          <p class="muted">Lead de A y de C. Es el VC que bancó el mark de $39B. Concentración de gobierno y de narrativa en un solo sponsor institucional.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="foda">
+      <h2>FODA</h2>
+      <p class="sec-lead">Fortalezas y oportunidades son de plataforma. Debilidades y amenazas son de precio, foco y guerra de volumen.</p>
+      <div class="swot">
+        <article class="card">
+          <span class="tag f">Fortalezas</span>
+          <ul>
+            <li>Único humanoid occidental con evidencia industrial multi-mes en una línea BMW de verdad, no un lab.</li>
+            <li>Vertical integration (BotQ): actuadores, batería, electronics. Menos rehén de un supply chain que todavía no existe.</li>
+            <li>Helix propio + Index: control del stack de datos y del modelo de control. Ya no alquilan el cerebro.</li>
+            <li>Cap table de primer nivel: NVIDIA, Microsoft, Bezos, Brookfield, Intel, Qualcomm.</li>
+            <li>Cadencia de iteración absurda: 01 → 02 → 03 en dos años y pico.</li>
+            <li>Diseño 03 pensado para casa (textiles, carga inalámbrica, audio) sin abandonar planta.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag o">Oportunidades</span>
+          <ul>
+            <li>Escasez estructural de mano de obra en manufactura, warehousing y cuidado. El form-factor humanoid encaja en infraestructura ya construida.</li>
+            <li>Brookfield + Catalyst Brands + BMW son tres verticales distintas. Si una escala, hay playbook.</li>
+            <li>Costo unitario: batería F.03 ya −78% vs F.02. La curva tipo auto es el camino a un ASP que el mercado puede tragar.</li>
+            <li>Robots que fabrican robots dentro de BotQ: flywheel de capex.</li>
+            <li>Index como dataset exclusivo. Si Helix generaliza de verdad, el moat deja de ser el chasis.</li>
+            <li>IPO / liquidez cuando el market cap público de Unitree ya ancló “humanoids se pagan caros”.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag d">Debilidades</span>
+          <ul>
+            <li>Revenue no divulgado. A $39B se está descontando una compañía de software a escala, no un piloto de 1.000 robots.</li>
+            <li>El 03 todavía no tiene un track record público comparable al 02 en BMW. El rediseño “para el hogar” es una apuesta, no un hecho.</li>
+            <li>Adcock parte el cerebro en Figure + Hark ($6B) + Cover + Archer. Key-person risk real.</li>
+            <li>Cap table cerrado, secundario hostil, sin S-1. Liquidez = 0 salvo tender autorizado.</li>
+            <li>Unit economics de RaaS / venta no publicados. Nadie sabe el margen de un 03 en el campo.</li>
+            <li>Demostraciones pulidas vs. autonomy 8–10 h sin niñera humana: el propio CEO dijo que no dejaría el robot suelto con sus hijos.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag a">Amenazas</span>
+          <ul>
+            <li>Tesla Optimus: captive demand, target $20–30k, escala de Gigafactory. Si Musk cumple una fracción, aplasta ASP.</li>
+            <li>China ya gana en volumen (AgiBot + Unitree ≈ 70%+ de shipments 1H26). Unitree salió a bolsa ≈ $50–60B.</li>
+            <li>Apptronik (Mercedes, DeepMind, ~$5B+) y Boston Dynamics/Hyundai (Atlas en planta, fábrica 30k/año) no están dormidos.</li>
+            <li>Demanda de safety regulatoria + lawsuit del ex-Head of Product Safety (Gruendel, nov 2025). Un incidente doméstico mata la tesis hogar.</li>
+            <li>OpenAI, Google DeepMind y todos los labs grandes ahora quieren cuerpo. El partner de ayer es el rival de hoy.</li>
+            <li>Un mark de $39B es frágil: cualquier miss de ramp o un quarter sin logos nuevos repricea el secundario.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="proscons">
+      <h2>Pros y contras, sin marketing</h2>
+      <div class="split">
+        <article class="card pro">
+          <h3>A favor</h3>
+          <ul>
+            <li><strong>Evidencia de campo, no slideware.</strong> 1.250 horas y 90.000 piezas en Spartanburg es el datapoint más sucio —y por eso más útil— del sector occidental.</li>
+            <li><strong>Velocidad de fábrica.</strong> 24× throughput en 120 días. Pocas startups de hardware hacen eso sin un OEM atrás.</li>
+            <li><strong>Software dejado de alquilar.</strong> Cortar a OpenAI fue caro en narrativa y correcto en control. Helix + Index es la única historia de moat que no se puede copiar en un trimestre.</li>
+            <li><strong>Canal de data privilegiado.</strong> Brookfield no es un logo. Es metros cuadrados de física cotidiana.</li>
+            <li><strong>El mercado público ya pagó el género.</strong> Unitree debutó a múltiplos de ciencia ficción. El comparables set se movió a favor de los marks privados altos.</li>
+            <li><strong>Form factor correcto.</strong> El mundo está construido para humanos. Un brazo de $40k no sube escaleras ni abre la puerta del depósito de 1987.</li>
+          </ul>
+        </article>
+        <article class="card con">
+          <h3>En contra</h3>
+          <ul>
+            <li><strong>El precio ya descuenta el final del juego.</strong> $39B ≈ TAM Goldman 2035. Pagás el outcome, no la opción.</li>
+            <li><strong>Sin P&amp;L.</strong> 1.000 robots a un ASP especulativo de cinco o seis cifras no acercan un revenue que sostenga ese equity value.</li>
+            <li><strong>Guerra de costos con Tesla y Shenzhen.</strong> Figure compite contra quien ya estampa metal de a millones y contra quien vende H1/H2 a precio de moto.</li>
+            <li><strong>Safety es un cisne negro barato de narrar y caro de vivir.</strong> La demanda del ex-safety lead y la frase del CEO sobre sus hijos son el mismo riesgo con dos acentos.</li>
+            <li><strong>Key person + multi-company.</strong> Hark a $6B es una noticia brillante para Adcock y una distracción estructural para un LP de Figure.</li>
+            <li><strong>No hay puerta de salida limpia.</strong> C&amp;D a brokers, transfers restringidos, Forge en descuento. Entrar hoy es casarse con el proceso, no con una cotización.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="competencia">
+      <h2>El barrio</h2>
+      <p class="sec-lead">Figure es el mark privado más alto. No es el shipment leader, ni el más barato, ni el que tiene una planta automotriz propia.</p>
+      <div class="grid-2">
+        <article class="card chart-card">
+          <div class="kicker">Valoraciones aproximadas · 2026</div>
+          <h3>Quién vale cuánto</h3>
+          <div class="chart-wrap tall"><canvas id="compChart"></canvas></div>
+          <p class="note">Unitree: market cap de debut STAR (~ago 2026). Boston Dynamics: implícita Hyundai. Apptronik: Series A-X. Tesla Optimus no se valúa aparte. Números redondeados, no NAV.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Cómo se diferencian</div>
+          <div class="bars">
+            <div class="bar-row"><span>Figure · generalista + data</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>88</span></div>
+            <div class="bar-row"><span>Tesla · escala captive</span><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div><span>92</span></div>
+            <div class="bar-row"><span>Unitree · precio / volumen</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span>80</span></div>
+            <div class="bar-row"><span>BD Atlas · acrobacia industrial</span><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div><span>70</span></div>
+            <div class="bar-row"><span>Apptronik · Mercedes / GDM</span><div class="bar-track"><div class="bar-fill" style="width:62%"></div></div><span>62</span></div>
+            <div class="bar-row"><span>Agility Digit · warehousing</span><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div><span>55</span></div>
+            <div class="bar-row"><span>1X NEO · hogar consumer</span><div class="bar-track"><div class="bar-fill" style="width:48%"></div></div><span>48</span></div>
+          </div>
+          <p class="note">Score relativo de “amenaza a la tesis Figure”, no ranking de producto. Tesla gana por escala potencial; Unitree por precio; Figure por el combo Western-brand + VLA + factory evidence.</p>
+        </article>
+      </div>
+      <div class="card" style="margin-top:1rem; overflow-x:auto">
+        <table>
+          <thead>
+            <tr><th>Player</th><th>Ángulo</th><th>Señal 2026</th><th>Versus Figure</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tesla Optimus</td><td>Captive auto + precio $20–30k</td><td>Gen 3 en plantas propias; clientes externos late 2026</td><td>El bear case #1. Si el costo cae, Figure no gana por spec sheet.</td></tr>
+            <tr><td>Unitree</td><td>Volumen China, IPO STAR</td><td>+5.500 robots 2025; mkt cap debut decenas de $B</td><td>Gana shipments. Pierde marca Western enterprise y VLA propio de este calibre.</td></tr>
+            <tr><td>AgiBot</td><td>Shipment leader 1H26</td><td>~43% share de unidades 1S</td><td>Presión de commodity. No compite el mismo buyer de BMW US.</td></tr>
+            <tr><td>Boston Dynamics</td><td>Atlas eléctrico + Hyundai</td><td>Planta 30k/año a 2028; Hyundai dueño pleno</td><td>Mejor acrobacia, peor narrativa de propósito general + data scale.</td></tr>
+            <tr><td>Apptronik Apollo</td><td>Mercedes, GXO, DeepMind</td><td>~$935M Series A, val. ~$5–5.5B</td><td>Mismo teatro industrial. Mucho menos capital y menos fábrica propia.</td></tr>
+            <tr><td>Agility Digit</td><td>RaaS logístico</td><td>Fábrica 10k/año; GXO</td><td>Más estrecho (no humanoid de casa). Más honesto en el use case.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="mercado">
+      <h2>Mercado: el TAM se pelea</h2>
+      <p class="sec-lead">Las consultoras no se ponen de acuerdo ni en el orden de magnitud. Eso, solo, ya dice que $39B es un precio de fe en una curva, no en un mercado existente.</p>
+      <div class="grid-2">
+        <article class="card chart-card">
+          <div class="kicker">Una curva entre muchas</div>
+          <h3>Humanoids, USD B · base HiQual</h3>
+          <div class="chart-wrap"><canvas id="mktChart"></canvas></div>
+          <p class="note">HiQual: $4.8B (2025) → $52B (2031) CAGR ~46%. Goldman: ~$38B en 2035. Mordor: $3.9B (2026) → $17.8B (2031). Morgan Stanley: 1B de unidades hacia 2050. Adcock: el salario humano ≈ mitad del GDP mundial.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Cómo pensarlo</div>
+          <h3>Tres mercados, no uno</h3>
+          <p>1. <strong>Industrial / logístico</strong> — el único que hoy paga. BMW, Mercedes, GXO, Catalyst. Ciclos de capex, safety officers, ROI en 18–36 meses.</p>
+          <p>2. <strong>Comercial en edificios existentes</strong> — Brookfield. Limpieza, handling, night ops. Menos throughput, más variedad de tareas.</p>
+          <p>3. <strong>Hogar</strong> — el prize. También el cementerio. 1X, Figure 03 y Tesla lo persiguen. Un incidente y el canal se cierra una década.</p>
+          <p class="muted">La tesis Figure necesita (1) para no morir, (2) para el data flywheel, y (3) para justificar el equity value. Con solo (1), es una empresa de $3–8B, no de $39B.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="riesgos">
+      <h2>Lo que puede romper la tesis</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="kicker">Precio</div>
+          <h3>Mark vs. realidad</h3>
+          <p class="muted">Un round a $39B con revenue opaco. El secundario ya descuenta. Si BotQ se estanca en miles, no en decenas de miles, no hay camino a ese número por múltiplo de sales.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Producto</div>
+          <h3>Autonomy sucia</h3>
+          <p class="muted">Demos de 200 h de sorting son impresionantes. Flotas heterogéneas, turnos de 3×8, maintenance, edge cases de agarre: eso todavía no es un producto que se vende como HVAC.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Gente</div>
+          <h3>El fundador es el trade</h3>
+          <p class="muted">Adcock es la cadencia. También es Hark, Cover y Archer. Un CEO-operador en tres compañías de deep tech es un feature hasta que es un bug.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Legal</div>
+          <h3>Safety lawsuit</h3>
+          <p class="muted">Robert Gruendel, ex-Head of Product Safety, demandó en nov 2025: fuerza de impacto del 02 y recorte de roadmap de safety. Figure niega y reconviene. El expediente solo ya es un haircut de buyer enterprise.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Geopolítica</div>
+          <h3>China shippea</h3>
+          <p class="muted">1H26: +19–22k unidades globales, mayoría china. Si el West regula tarde y Shenzhen aprende Helix-like policies, Figure se queda como Mercedes en un mundo Tesla+BYD.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Liquidez</div>
+          <h3>No hay tape</h3>
+          <p class="muted">Sin S-1. Transfers vetados. C&amp;D a Forge y pares. Entrar implica horizonte de fund, no de quarter. El paper gain de la C no se cobra.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="veredicto">
+      <h2>Veredicto</h2>
+      <div class="verdict-box">
+        <div class="eyebrow">Posición</div>
+        <h3 class="serif" style="font-size:1.7rem;margin:.35rem 0 .8rem">Comprar la categoría, no perseguir este mark</h3>
+        <p>Figure es, hoy, la mejor versión occidental de la tesis “el humanoid gana”. Tiene fábrica, tiene un cliente automotriz que no es un PowerPoint, tiene un VLA propio y acaba de construir un pipeline de datos que el resto todavía compra a vendors. Eso merece respeto analítico.</p>
+        <p>No merece, a $39B, el mismo cheque que se le escribiría a una compañía con revenue visible, margen y un segundo logo industrial del tamaño de BMW. El secundario a ~$35B es más honesto que el cap table de la C, y todavía es un precio de outcome.</p>
+        <p>Trabajo para un LP que ya está adentro: no vender por pánico de narrativa, sí exigir evidencia trimestral de (a) hours-in-field, (b) unit cost, (c) logos que no sean del mismo cluster. Trabajo para quien mira entrar: esperar un tender con descuento real, o construir la tesis vía picks and shovels (NVIDIA, actuadores, contract manufacturing) hasta que Figure publique un número de sales que no esté escondido detrás de “committed capital”.</p>
+        <p class="muted">Convencimiento en el <em>qué</em>. Escepticismo en el <em>a qué precio</em>. Esa es toda la tesis.</p>
+      </div>
+      <div class="grid-3" style="margin-top:1rem">
+        <article class="card">
+          <div class="kicker">Bull</div>
+          <p>BotQ ×10, Helix generaliza, BMW se replica en 3 OEMs, Index es el ImageNet de lo físico. $39B se ve barato en 2029.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Base</div>
+          <p>Figure es el humanoid Western de referencia, escala a decenas de miles, IPO a un número parecido al mark actual. El retorno desde acá es mediocre.</p>
+        </article>
+        <article class="card">
+          <div class="kicker">Bear</div>
+          <p>Tesla o China ganan el costo. Un accidente doméstico. El C se repricea a $8–12B. Los LPs de la B siguen bien; los del C no.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="fuentes">
+      <h2>Fuentes y método</h2>
+      <p class="sec-lead">Hechos de compañía tomados de figure.ai (Series C, Figure 03, BotQ, Index, BMW, Brookfield, Catalyst Brands). Valoraciones y cap table cruzados con Reuters, Sacra, CB Insights, Forge y filings periodísticos. Competencia y mercado: Venture Atlas, HiQual, Goldman vía cobertura secundaria, Mordor. Donde hay conflicto (revenue 2025 de consultoras vs. silencio de la empresa) se privilegia el silencio.</p>
+      <ul class="src">
+        <li><a href="https://www.figure.ai/news/series-c">Figure — Series C, 16 sep 2025</a></li>
+        <li><a href="https://www.figure.ai/news/introducing-figure-03">Figure — Introducing Figure 03</a></li>
+        <li><a href="https://www.figure.ai/news/ramping-figure-03-production">Figure — Ramping Figure 03 Production, 29 abr 2026</a></li>
+        <li><a href="https://www.figure.ai/news/introducing-index">Figure — Introducing Index, 25 ago 2026</a></li>
+        <li><a href="https://www.reuters.com/business/robotics-startup-figure-valued-39-billion-latest-funding-round-2025-09-16/">Reuters — $39B Series C</a></li>
+        <li><a href="https://sacra.com/c/figure-ai/">Sacra — Figure AI</a></li>
+        <li><a href="https://forgeglobal.com/figure-ai_stock/">Forge — $174 / ~$34.81B · 29 ago 2026</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Figure_AI">Wikipedia — Figure AI</a></li>
+        <li><a href="https://www.ventureatlas.org/industry/humanoid-robots">Venture Atlas — Humanoid robots 2026</a></li>
+      </ul>
+      <p class="note">No es recomendación de compra ni de venta. Figure es privada; cualquier interés en el equity depende de transfer restrictions y autorización del board. Datos al 29 de agosto de 2026.</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      Página estática en <a href="../">kzu.github.io/grok</a>
+      · tesis armada ago 2026
+      · <a href="https://github.com/kzu/grok">source</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

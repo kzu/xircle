@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Xircle",
+      "hasCanvas": false,
+      "bodyTextLen": 501,
+      "bodyTextHash": "73b7f5040d15939fa8c519590005c502a6d52ed7723586e2398edfdfdae5c5c2",
+      "bodyTextPrefix": "Xircle POWERED BY X Curated communities, in a circle. Xircle is ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Xircle",
+      "hasCanvas": false,
+      "bodyTextLen": 501,
+      "bodyTextHash": "73b7f5040d15939fa8c519590005c502a6d52ed7723586e2398edfdfdae5c5c2",
+      "bodyTextPrefix": "Xircle POWERED BY X Curated communities, in a circle. Xircle is ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
